@@ -1,4 +1,4 @@
-
+from stats import word_count
 
 
 '''
@@ -19,32 +19,12 @@ def get_book_text(userDirectory):
 
         return book_content
 
-''' 
-Function: Give total word count of book
-Input: Book text
-Output: Total word count 
-'''
-def word_count(texts):
-
-    split = texts.split()  
-
-    print(f"Found {len(split)} total words")
-
-
-
 def main():
     
     book_dir = "./books/frankenstein.txt"
 
     word_count(get_book_text(book_dir))
     
-    
-
-
-
-
-
-
 
 main()
 
